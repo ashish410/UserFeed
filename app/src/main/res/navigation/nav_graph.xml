@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/nav_graph"
+    app:startDestination="@id/userPostFragment">
+
+    <fragment
+        android:id="@+id/userPostFragment"
+        android:name="com.project.feed.ui.UserPostFragment"
+        android:label="All Users"
+        tools:layout="@layout/user_post_fragment">
+        <action
+            android:id="@+id/action_userPostFragment_to_userDetailFragment"
+            app:destination="@id/userDetailFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/userDetailFragment"
+        android:name="com.project.feed.ui.UserDetailFragment"
+        android:label="All Post By User"
+        tools:layout="@layout/user_detail_fragment" >
+        <argument
+            android:name="userDetail"
+            app:argType="com.project.feed.data.UserDetail" />
+    </fragment>
+</navigation>
