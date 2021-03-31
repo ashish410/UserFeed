@@ -5,7 +5,7 @@ MVVM is used as the architecture of this app. <br>
 The network calls were done using the Retrofit library. <br>
 The network response is handled on the IO thread. This is possible by the Kotlin Coroutines. <br>
 Also, I have used Hilt as the dependency injection making it easier and efficient to access the dependencies at compile time.<br> <br> 
-Package Description:
+Package Description:<br> 
  |- data: Contains all the required data classes <br>
  |- di: Contains the dependency injection classes<br>
  |- network: Contains the classes responsible for handling network connectivity. Also contains the network request classes and interfaces<br>
